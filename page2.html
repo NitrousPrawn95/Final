@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Web Page</title>
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+        <style>
+html, * { margin: 0; padding: 0; }
+body { height:300vh;font-family: 'Archivo Black';}
+h1 { margin: 50px auto; text-align: center; }
+h2 { padding: 0; margin: 0;  font-size: 36px; }
+</style>
+        </head>
+   
+    <body>
+        <!--Navbar-->
+         <div class="topnav">
+   <a href="page4.html">Feedback</a>
+  <a href="page3.html">Knowledge</a>
+  <a class="active" href="page2.html">Randomize</a>
+  <a href="page1.html">Peaks</a>
+  <a href="index.html">Home</a>
+</div>
+<!-- Scroll parallax-->
+<div class="parallax" style="height:500px; line-height:500px; text-align:center; color:#fff; background-image: url(https://picsum.photos/1920/1024/?random)" id="your-parallax"></div>
+<h1>Image randomizer! Reload the page to randomize an image from a few datasets I found.</h1>
+<script type="text/javascript"
+</script></div>
+<script src="bearings.js"></script>
+<script>
+var parallax = new Parallax($('#your-parallax'));
+
+$(window).scroll(function(){
+    parallax.parallax()
+})
+</script>
+
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Web Page</title>
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+        <style>
+html, * { margin: 0; padding: 0; }
+body { height:300vh;font-family: 'Archivo Black';}
+h1 { margin: 50px auto; text-align: center; }
+h2 { padding: 0; margin: 0;  font-size: 36px; }
+</style>
+        </head>
+   
+    <body>
+        <!--Navbar-->
+         <div class="topnav">
+   <a href="page4.html">Feedback</a>
+  <a class="active" href="page3.html">Knowledge</a>
+  <a href="page2.html">Randomize</a>
+  <a href="page1.html">Peaks</a>
+  <a href="index.html">Home</a>
+</div>
+<!-- Scroll parallax-->
+<div class="parallax" style="height:500px; line-height:500px; text-align:center; color:#fff; background-image: url(https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/09/web-development-tools.webp)" id="your-parallax"><h2>What I've learned</h2></div>
+<script src="bearings.js"></script>
+<script>
+var parallax = new Parallax($('#your-parallax'));
+
+$(window).scroll(function(){
+    parallax.parallax()
+})
+</script>
+ <h1>Web Development Concepts I learned so far:</h1>
+    <ul>
+        <li>HTML (HyperText Markup Language)</li>
+        <li>CSS (Cascading Style Sheets)</li>
+        <li>JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>Front-end Development</li>
+        <li>Back-end Development</li>
+        <li>APIs (Application Programming Interfaces)</li>
+        <li>HTTP (Hypertext Transfer Protocol)</li>
+    </ul>
+    </body>
+</html>
